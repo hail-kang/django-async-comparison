@@ -1,0 +1,21 @@
+[project]
+name = "django-async-comparison"
+version = "0.1.0"
+description = "A project to compare performance of Django Sync/Async views and WSGI/ASGI servers."
+requires-python = ">=3.8"
+dependencies = [
+    "django==3.2",
+    "gunicorn",
+    "uvicorn",
+    "locust",
+    "asgiref",
+    "pytz",
+    "sqlparse",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["config", "myapp"]
